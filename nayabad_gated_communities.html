@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gated Communities in Nayabad, Kolkata</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            text-align: center;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .last-updated {
+            text-align: center;
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(0,0,0,0.3);
+        }
+
+        .card-header {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: #fff;
+            padding: 20px;
+        }
+
+        .card-header h2 {
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+        }
+
+        .card-header .developer {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .info-row {
+            display: flex;
+            margin-bottom: 12px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 12px;
+        }
+
+        .info-row:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: #555;
+            min-width: 140px;
+            font-size: 0.9rem;
+        }
+
+        .info-value {
+            color: #333;
+            font-size: 0.9rem;
+            flex: 1;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .status-ready {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .status-construction {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .map-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .map-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
+        }
+
+        .amenities {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .amenity-tag {
+            background: #e8f4fd;
+            color: #2980b9;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.75rem;
+        }
+
+        .disclaimer {
+            text-align: center;
+            color: rgba(255,255,255,0.8);
+            margin-top: 30px;
+            font-size: 0.85rem;
+            padding: 20px;
+            background: rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .cards-container {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .info-row {
+                flex-direction: column;
+            }
+
+            .info-label {
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gated Communities in Nayabad, Kolkata</h1>
+        <p class="subtitle">South Kolkata - Near EM Bypass & Kavi Subhash Metro Station</p>
+        <p class="last-updated">Last Updated: January 2025</p>
+
+        <div class="cards-container">
+            <!-- Shrachi Dakshin -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>Shrachi Dakshin</h2>
+                    <div class="developer">By Shrachi Realty</div>
+                </div>
+                <div class="card-body">
+                    <div class="info-row">
+                        <span class="info-label">Status:</span>
+                        <span class="info-value"><span class="status-badge status-ready">Ready to Move</span></span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Configuration:</span>
+                        <span class="info-value">2 BHK & 3 BHK Apartments</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Project Area:</span>
+                        <span class="info-value">0.42 Acres</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Address:</span>
+                        <span class="info-value">1B, Nayabad Avenue, Budher Haat Road, Near Ambuja Upohar, Kolkata - 700094</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Landmarks:</span>
+                        <span class="info-value">0.1 km from EM Bypass, Opposite Ambuja Upohar, 0.3 km from New Garia Station</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Map:</span>
+                        <span class="info-value">
+                            <a href="https://www.google.com/maps/search/Shrachi+Dakshin+Nayabad+Kolkata" target="_blank" class="map-link">View on Google Maps</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deeshari Meadows -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>Deeshari Meadows</h2>
+                    <div class="developer">By Deeshari Group (Est. 2001)</div>
+                </div>
+                <div class="card-body">
+                    <div class="info-row">
+                        <span class="info-label">Status:</span>
+                        <span class="info-value"><span class="status-badge status-ready">Ready to Move</span></span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Age:</span>
+                        <span class="info-value">Launched May 2015, Possession Jan 2017</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Configuration:</span>
+                        <span class="info-value">2 BHK, 3 BHK, 4 BHK & Duplexes (943 - 1625 sq.ft.)</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Construction:</span>
+                        <span class="info-value">3 Multi-storied Buildings, 22 Flats, 2.6 Acres</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Address:</span>
+                        <span class="info-value">2145, Nayabad, Near New Garia / Kavi Subhash Metro Station, Kolkata - 700094</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Amenities:</span>
+                        <span class="info-value">
+                            <div class="amenities">
+                                <span class="amenity-tag">Gated Community</span>
+                                <span class="amenity-tag">Gym</span>
+                                <span class="amenity-tag">Garden</span>
+                                <span class="amenity-tag">Play Area</span>
+                                <span class="amenity-tag">24Hr Backup</span>
+                                <span class="amenity-tag">Security</span>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Map:</span>
+                        <span class="info-value">
+                            <a href="https://www.google.com/maps/search/Deeshari+Meadows+Nayabad+Kolkata" target="_blank" class="map-link">View on Google Maps</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deeshari Embassy -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>Deeshari Embassy</h2>
+                    <div class="developer">By Deeshari Group</div>
+                </div>
+                <div class="card-body">
+                    <div class="info-row">
+                        <span class="info-label">Status:</span>
+                        <span class="info-value"><span class="status-badge status-ready">Ready to Move</span></span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Configuration:</span>
+                        <span class="info-value">2 BHK & 3 BHK (900 - 1103 sq.ft.)</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Construction:</span>
+                        <span class="info-value">8 Units, 0.18 Acres</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Address:</span>
+                        <span class="info-value">Nayabad, Near EM Bypass & Garia Main Road, South Kolkata</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Landmarks:</span>
+                        <span class="info-value">2.58 km from Metro Station, 2.46 km from Railway Station</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Map:</span>
+                        <span class="info-value">
+                            <a href="https://www.google.com/maps/search/Deeshari+Embassy+Nayabad+Kolkata" target="_blank" class="map-link">View on Google Maps</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nayabad Complex -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>Nayabad Complex</h2>
+                    <div class="developer">By Quadry Group</div>
+                </div>
+                <div class="card-body">
+                    <div class="info-row">
+                        <span class="info-label">Status:</span>
+                        <span class="info-value"><span class="status-badge status-ready">Ready to Move</span></span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Configuration:</span>
+                        <span class="info-value">2 BHK & 3 BHK (805 - 1288 sq.ft.)</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Construction:</span>
+                        <span class="info-value">1.00 Acre, Eco-friendly Design</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Address:</span>
+                        <span class="info-value">Nayabad, Kolkata, West Bengal</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Amenities:</span>
+                        <span class="info-value">
+                            <div class="amenities">
+                                <span class="amenity-tag">Gated Community</span>
+                                <span class="amenity-tag">Gym</span>
+                                <span class="amenity-tag">Garden</span>
+                                <span class="amenity-tag">Play Area</span>
+                                <span class="amenity-tag">24Hr Backup</span>
+                                <span class="amenity-tag">Security</span>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Map:</span>
+                        <span class="info-value">
+                            <a href="https://www.google.com/maps/search/Nayabad+Complex+Kolkata" target="_blank" class="map-link">View on Google Maps</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Eden Ixora -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>Eden Ixora</h2>
+                    <div class="developer">By Eden Group</div>
+                </div>
+                <div class="card-body">
+                    <div class="info-row">
+                        <span class="info-label">Status:</span>
+                        <span class="info-value"><span class="status-badge status-ready">Ready to Move</span></span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Age:</span>
+                        <span class="info-value">Possession since June 2013 (~11 years old)</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Configuration:</span>
+                        <span class="info-value">2 BHK & 3 BHK (938 - 1372 sq.ft.)</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Construction:</span>
+                        <span class="info-value">19 Units, 1.00 Acre</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Address:</span>
+                        <span class="info-value">E.M. Bypass, Behind Devi Shetty Hospital (Peerless Hospital), Nayabad, Kolkata</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Landmarks:</span>
+                        <span class="info-value">0.6 km from New Town Expressway, Near New Garia Metro</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Map:</span>
+                        <span class="info-value">
+                            <a href="https://www.google.com/maps/search/Eden+Ixora+Nayabad+EM+Bypass+Kolkata" target="_blank" class="map-link">View on Google Maps</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bepari Lake View 4 -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>Bepari Lake View 4</h2>
+                    <div class="developer">By Bepari Developers</div>
+                </div>
+                <div class="card-body">
+                    <div class="info-row">
+                        <span class="info-label">Status:</span>
+                        <span class="info-value"><span class="status-badge status-ready">Ready to Move</span></span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">RERA:</span>
+                        <span class="info-value">HIRA/P/KOL/2021/001201</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Configuration:</span>
+                        <span class="info-value">2 BHK & 3 BHK (770 - 906 sq.ft.)</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Construction:</span>
+                        <span class="info-value">12 Units, 0.11 Acres</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Address:</span>
+                        <span class="info-value">235, Nabadit, Nayabad NA, Tehsil: Kolkata, PS: Purba Jadavpur, Kolkata - 700099</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Landmarks:</span>
+                        <span class="info-value">1.5 km from EM Bypass, 1.5 km from Railway Station</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Map:</span>
+                        <span class="info-value">
+                            <a href="https://www.google.com/maps/search/Bepari+Lake+View+Nayabad+Kolkata" target="_blank" class="map-link">View on Google Maps</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Binayak Purple -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>Binayak Purple</h2>
+                    <div class="developer">By Binayak Groups</div>
+                </div>
+                <div class="card-body">
+                    <div class="info-row">
+                        <span class="info-label">Status:</span>
+                        <span class="info-value"><span class="status-badge status-ready">Ready to Move</span></span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">RERA:</span>
+                        <span class="info-value">WBRERA/P/KOL/2023/000875</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Configuration:</span>
+                        <span class="info-value">2 BHK & 3 BHK (840 - 1090 sq.ft.)</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Construction:</span>
+                        <span class="info-value">Single Tower, 3 Floors, 12 Units</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Address:</span>
+                        <span class="info-value">Nayabad, Near Shatabdi Park, Kolkata - 700150</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Landmarks:</span>
+                        <span class="info-value">3 km from Kavi Subhash Metro, 3 km from Garia Railway Station</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Map:</span>
+                        <span class="info-value">
+                            <a href="https://www.google.com/maps/search/Binayak+Purple+Nayabad+Kolkata" target="_blank" class="map-link">View on Google Maps</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ashirbad Parashmani -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>Ashirbad Parashmani</h2>
+                    <div class="developer">By Ashirbad Reality</div>
+                </div>
+                <div class="card-body">
+                    <div class="info-row">
+                        <span class="info-label">Status:</span>
+                        <span class="info-value"><span class="status-badge status-ready">Ready to Move</span></span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Configuration:</span>
+                        <span class="info-value">3 BHK Apartments</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Address:</span>
+                        <span class="info-value">Nayabad, Near EM Bypass, South Kolkata</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Landmarks:</span>
+                        <span class="info-value">Near Indus Valley World School, Medica Superspecialty Hospital</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Map:</span>
+                        <span class="info-value">
+                            <a href="https://www.google.com/maps/search/Ashirbad+Parashmani+Nayabad+Kolkata" target="_blank" class="map-link">View on Google Maps</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="disclaimer">
+            <strong>Disclaimer:</strong> Information compiled from various real estate portals (99acres, SquareYards, CommonFloor, etc.).
+            Please verify details directly with developers or visit the properties before making any decisions.
+            Prices and availability may have changed.
+        </div>
+    </div>
+</body>
+</html>
