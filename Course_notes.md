@@ -1,4 +1,5 @@
-Course Notes
+# Course Notes
+
 This note includes the instructions on how to install Claude Code, and the links to the coding examples and prompts used in the lessons.
 
 Note:
